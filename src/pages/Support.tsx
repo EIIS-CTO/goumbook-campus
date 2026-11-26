@@ -5,7 +5,7 @@ import { useI18n } from "../i18n";
 import { useStore } from "../store";
 import { FAQ, ME } from "../data/mock";
 import { course, lessonsInOrder } from "../data/course";
-import { Bar, Button, Empty, PageTitle } from "../components/ui";
+import { Bar, Button, Empty, PageTitle, PartnerLogos } from "../components/ui";
 
 export function Notes() {
   const { t, lang, locale } = useI18n();
@@ -127,10 +127,7 @@ function Certificate() {
       <p className="relative mt-3 text-[13px] text-[#52606b]">{t("has successfully completed the program")}</p>
       <p className="relative mt-2 font-heading text-[18px] font-semibold text-[#06798a] sm:text-[22px]">{course(lang).title}</p>
       <div className="relative mt-8 flex items-end justify-between gap-4 text-start text-[11px] text-[#52606b]">
-        <span>
-          <span className="block font-semibold text-[#1f2a33]">EIIS</span>
-          {t("European Institute of Innovation for Sustainability")}
-        </span>
+        <PartnerLogos tone="light" height={30} label={t("A program by Goumbook and EIIS")} className="flex-wrap" />
         <span className="text-end">
           {new Date().toLocaleDateString(locale, { day: "numeric", month: "long", year: "numeric" })}
           <span className="block font-mono">MIIS-2027-0142</span>

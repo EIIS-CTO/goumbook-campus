@@ -129,6 +129,26 @@
   }
 }
 
+/* I loghi dei partner hanno due versioni: scritte scure sul chiaro, chiare
+   sullo scuro. Se ne vede una sola, secondo il tema. */
+.logo-for-dark {
+  display: none;
+}
+:root[data-theme="dark"] .logo-for-light {
+  display: none;
+}
+:root[data-theme="dark"] .logo-for-dark {
+  display: block;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-for-light {
+    display: none;
+  }
+  :root:not([data-theme="light"]) .logo-for-dark {
+    display: block;
+  }
+}
+
 .theme-switch-knob {
   transform: translateX(4px);
   transition: transform 180ms var(--eiis-easing-standard);

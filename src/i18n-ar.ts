@@ -15,7 +15,7 @@ export const AR: Record<string, string> = {
   "The AI is writing": "الذكاء الاصطناعي يكتب",
   "The AI knows every lesson of the course: ask in your words, it answers in your language.": "يعرف الذكاء الاصطناعي كل دروس الدورة: اسأل بكلماتك، وسيجيبك بلغتك.",
   "0 files": "0 ملفات",
-  "A program by EIIS · European Institute of Innovation for Sustainability": "برنامج من EIIS · المعهد الأوروبي للابتكار من أجل الاستدامة",
+  "A program by Goumbook and EIIS": "برنامج من Goumbook وEIIS",
   "A word next to the name, earned by finishing the course, through the Impact Index or given by the team.":
     "كلمة بجانب الاسم، تُكتسب بإتمام الدورة أو عبر مؤشر الأثر أو يمنحها الفريق.",
   About: "نبذة",
@@ -62,7 +62,6 @@ export const AR: Record<string, string> = {
   "Edit the profile": "تعديل الملف الشخصي",
   Email: "البريد الإلكتروني",
   "Enter the preview": "ادخل إلى المعاينة",
-  "European Institute of Innovation for Sustainability": "المعهد الأوروبي للابتكار من أجل الاستدامة",
   Exercise: "تمرين",
   Exercises: "التمارين",
   FAQ: "الأسئلة الشائعة",

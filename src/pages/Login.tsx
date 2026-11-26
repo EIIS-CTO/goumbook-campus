@@ -2,6 +2,7 @@ import { useNavigate } from "react-router";
 import { BookOpen, CalendarDays, MessagesSquare, Sparkles } from "lucide-react";
 import { useI18n } from "../i18n";
 import { LangSwitch, ThemeToggle } from "../components/Shell";
+import { PartnerLogos } from "../components/ui";
 
 /**
  * L'ingresso: la pagina di accesso del campus, col marchio MiiS. Nessuna
@@ -49,7 +50,10 @@ export function Login() {
             ))}
           </ul>
         </div>
-        <p className="relative mt-10 text-[12px] text-white/50">{t("A program by EIIS · European Institute of Innovation for Sustainability")}</p>
+        <div className="relative mt-12">
+          <p className="mb-3.5 text-[12px] text-white/55">{t("A program by Goumbook and EIIS")}</p>
+          <PartnerLogos tone="dark" height={34} />
+        </div>
       </section>
 
       <section className="flex flex-col px-5 py-6 sm:px-10">
@@ -112,6 +116,11 @@ export function Login() {
             <strong className="text-pink">{t("Preview with fictional data.")}</strong>{" "}
             {t("You enter as Mariam, a participant halfway through the program. The course is the real one; people, posts and events are invented. Nothing you do here is sent anywhere.")}
           </p>
+
+          <div className="mt-8 flex flex-col items-center gap-3 lg:hidden">
+            <p className="text-[12px] text-content-2">{t("A program by Goumbook and EIIS")}</p>
+            <PartnerLogos height={28} />
+          </div>
         </div>
       </section>
     </div>

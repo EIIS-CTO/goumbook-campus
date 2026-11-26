@@ -23,7 +23,7 @@ import { useI18n } from "../i18n";
 import { useStore } from "../store";
 import { ME, NOTICES } from "../data/mock";
 import { course } from "../data/course";
-import { AiMark, Avatar, Bar, useAgo } from "./ui";
+import { AiMark, Avatar, Bar, PartnerLogos, useAgo } from "./ui";
 import { AssistantPanel } from "./Assistant";
 
 /**
@@ -188,6 +188,7 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
             </p>
           </Link>
           <PreviewPill />
+          <PartnerLogos height={20} label={t("A program by Goumbook and EIIS")} className="mt-3.5 justify-center" />
         </div>
       </aside>
     </>

@@ -135,3 +135,44 @@ export function useAgo() {
     return rtf.format(Math.round(s / 86400), "day");
   };
 }
+
+/**
+ * I loghi di chi fa il programma, Goumbook e EIIS, divisi da un filo. `tone`
+ * dice su che fondo stanno: "auto" segue il tema (le due versioni, una nascosta
+ * dal CSS), "dark" è un fondo sempre scuro (scritte chiare), "light" uno
+ * sempre chiaro, come il certificato.
+ */
+export function PartnerLogos({
+  height = 28,
+  tone = "auto",
+  label,
+  className = "",
+}: {
+  height?: number;
+  tone?: "auto" | "dark" | "light";
+  label?: string;
+  className?: string;
+}) {
+  const base = `${import.meta.env.BASE_URL}brand/`;
+  const logo = (file: string, ext: string, alt: string, h: number, ratio: number) => {
+    const style = { height: h, width: Math.round(h * ratio) };
+    const chiaro = `${base}${file}.${ext}`;
+    const scuro = `${base}${file}-light.${ext}`;
+    if (tone === "light") return <img src={chiaro} alt={alt} style={style} />;
+    if (tone === "dark") return <img src={scuro} alt={alt} style={style} />;
+    return (
+      <span className="inline-flex shrink-0">
+        <img src={chiaro} alt={alt} style={style} className="logo-for-light" />
+        <img src={scuro} alt={alt} style={style} className="logo-for-dark" />
+      </span>
+    );
+  };
+  const filo = tone === "dark" ? "bg-white/25" : tone === "light" ? "bg-[#d5dade]" : "bg-line-strong";
+  return (
+    <div role="group" aria-label={label} title={label} className={`flex items-center gap-3.5 ${className}`}>
+      {logo("goumbook-logo", "png", "Goumbook", height, 4.5)}
+      <span aria-hidden="true" className={`w-px shrink-0 ${filo}`} style={{ height: Math.round(height * 0.9) }} />
+      {logo("eiis-logo", "svg", "EIIS", Math.round(height * 1.1), 2.535)}
+    </div>
+  );
+}
