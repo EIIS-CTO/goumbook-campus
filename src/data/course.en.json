@@ -1,0 +1,480 @@
+{
+  "id": "innovation-for-sustainability",
+  "title": "Innovation for Sustainability",
+  "sections": [
+    {
+      "id": "s1392",
+      "title": "Welcome in the Digital Campus!",
+      "description": "",
+      "locked": false,
+      "lessons": [
+        {
+          "id": "l1411",
+          "type": "reading",
+          "title": "What to expect from the Program ✨",
+          "locked": false,
+          "html": "<p><strong>Welcome to this learning journey!</strong></p><p>In this first video, Professor Carlo Alberto Pratesi,<strong> President of the European Institute of Innovation for Sustainability</strong>, will introduce the purpose of the program and welcome you to this experience. You will discover what to expect from the course, the type of experts and organizations you will encounter, and the mindset that will help you make the most of this learning opportunity.</p><p>This introduction will help you begin the program with <strong>curiosity, openness, and motivation</strong>.</p>"
+        },
+        {
+          "id": "l1412",
+          "type": "video",
+          "title": "Before we start",
+          "locked": false,
+          "vimeo": {
+            "id": "867309335",
+            "h": "c0cc8c9701"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s1393",
+      "title": "Business & Human Rights",
+      "description": "Human rights are becoming part of how companies are judged.\n\nCompanies are no longer assessed only by what they produce, but by how they treat the people connected to their work.\n\nFrom employees and suppliers to children and local communities, business decisions can create risks, responsibilities and opportunities for trust.\n\nUnderstanding these dynamics is becoming essential for anyone working in sustainability, ESG, compliance or responsible business.",
+      "locked": false,
+      "lessons": [
+        {
+          "id": "l1394",
+          "type": "test",
+          "title": "What should businesses be responsible for?",
+          "locked": false,
+          "questions": [
+            {
+              "id": "q300",
+              "kind": "long-answer",
+              "text": "When you think about the impact of a company on society, what responsibilities do you think a business should have beyond generating profit?",
+              "options": []
+            }
+          ]
+        },
+        {
+          "id": "l1395",
+          "type": "reading",
+          "title": "Business & Human Rights: shifting from economic to social perspective",
+          "locked": false,
+          "html": "<p>Businesses today are expected to <strong>look beyond financial performance</strong> and consider their wider impact on people and society.</p><p>In the following video, you will explore the <strong>relationship between business activities and human rights</strong>, understanding how companies can affect the rights and dignity of individuals, workers, communities, and consumers across their operations and supply chains.</p><p>While states remain <strong>primarily responsible for protecting human rights</strong>, companies are increasingly expected to integrate human rights principles into their strategies, decisions, and daily operations.</p><p>Experts will guide you through the evolution of Business &amp; Human Rights over the past decades, highlighting key events, challenges, and lessons learned from real-world cases.</p>"
+        },
+        {
+          "id": "l1396",
+          "type": "video",
+          "title": "Watch the video",
+          "locked": false,
+          "vimeo": {
+            "id": "1035257367",
+            "h": "678b353ac3"
+          }
+        },
+        {
+          "id": "l1397",
+          "type": "reading",
+          "title": "Effective Grievance Mechanisms for workers",
+          "locked": false,
+          "html": "<p>Lara Strangways, <strong>Head of Business &amp; Human Rights at Global Rights Compliance</strong>, explores the real challenges of designing effective grievance mechanisms. </p><p>She explains why<strong> context</strong> matters and how <strong>practical barriers</strong> can affect a worker’s ability to raise concerns safely. </p><p><strong>Find out </strong>what makes grievance mechanisms truly effective!</p>"
+        },
+        {
+          "id": "l1398",
+          "type": "video",
+          "title": "Watch the video",
+          "locked": false,
+          "vimeo": {
+            "id": "1145963543",
+            "h": "c8c70990f5"
+          }
+        },
+        {
+          "id": "l1399",
+          "type": "test",
+          "title": "Quiz time!",
+          "locked": false,
+          "questions": [
+            {
+              "id": "q301",
+              "kind": "single-choice",
+              "text": "According to the video, what makes a grievance mechanism effective?",
+              "options": [
+                {
+                  "text": "Having only one reporting channel managed by the company",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                },
+                {
+                  "text": "Ensuring the mechanism is accessible, trusted, communicated to workers, and integrated into company systems",
+                  "correct": true,
+                  "feedback": "Correct!"
+                },
+                {
+                  "text": "Making the process anonymous in every situation",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                },
+                {
+                  "text": "Limiting access only to permanent employees",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s1400",
+      "title": "Space Entrepreneurship",
+      "description": "Space is becoming integral to how every industry operates.\n\nNo longer just a domain of exploration, Space is becoming a strategic layer of the global economy. Satellite data, climate intelligence, connectivity, security, and logistics are making space increasingly central to how industries navigate uncertainty, manage complexity, and drive long-term value.",
+      "locked": false,
+      "lessons": [
+        {
+          "id": "l1401",
+          "type": "reading",
+          "title": "How to Be a Good Leader",
+          "locked": false,
+          "html": "<p><strong>Leadership</strong> is not only about making decisions or managing people. A good leader must<em> inspire, build trust, overcome challenges</em>, and create the conditions for a team to achieve a shared vision.</p><p>In this video, you will explore <strong>key leadership lessons </strong>inspired by the experience of astronauts and space missions. Through this perspective, you will discover how courage, inspiration, goal setting, trust, diversity, and accountability can shape effective leadership.</p><p>You will learn why leaders need to <strong>step back and see challenges from different perspectives</strong>, empower their teams, and recognize that their own actions set an example for others.</p>"
+        },
+        {
+          "id": "l1402",
+          "type": "video",
+          "title": "Watch the video!",
+          "locked": false,
+          "vimeo": {
+            "id": "827915888",
+            "h": "780361541e"
+          }
+        },
+        {
+          "id": "l1403",
+          "type": "test",
+          "title": "Quiz Time!",
+          "locked": false,
+          "questions": [
+            {
+              "id": "q302",
+              "kind": "single-choice",
+              "text": "What does it mean that “a leader is a role model”?",
+              "options": [
+                {
+                  "text": "A leader’s behavior influences how others act and what they consider acceptable",
+                  "correct": true,
+                  "feedback": "Correct!"
+                },
+                {
+                  "text": "A leader should always be the most visible person in the company",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                },
+                {
+                  "text": "A leader should never make mistakes or change decisions",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                },
+                {
+                  "text": "A leader’s personal behavior has no impact on the team",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l1404",
+          "type": "test",
+          "title": "Put yourself in the entrepreneur’s shoes",
+          "locked": false,
+          "questions": [
+            {
+              "id": "q303",
+              "kind": "long-answer",
+              "text": "You have developed an innovative product and are looking for your first investment. What would you prepare before meeting a potential investor?",
+              "options": []
+            }
+          ]
+        },
+        {
+          "id": "l1405",
+          "type": "reading",
+          "title": "Investing and Fundraising Tips",
+          "locked": false,
+          "html": "<p>Raising capital is not only about presenting an innovative idea. Investors need to understand the <strong>opportunity</strong>, the <strong>team behind it</strong>, the <strong>market potential</strong>, and how the company plans to manage risks and achieve growth.</p><p>In the next video, Captain Stephan Reckie, <strong>Executive Director at GEN Space</strong>, shares practical fundraising insights for companies operating in the Space industry.</p><p>You will explore what investors look for, how to <strong>build an effective pitch</strong>, why understanding your financial projections and burn rate is essential, and how entrepreneurs can <strong>create meaningful relationships</strong> with potential investors.</p><p>From defining your value proposition to preparing for investor due diligence, this session provides practical guidance for approaching fundraising with confidence and professionalism.</p>"
+        },
+        {
+          "id": "l1406",
+          "type": "video",
+          "title": "Watch the video!",
+          "locked": false,
+          "vimeo": {
+            "id": "832596628",
+            "h": "1fafecaef5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s1407",
+      "title": "AI & Ethics",
+      "description": "AI, Ethics, and the Architecture of Responsibility\n\nAI has moved from the lab to the core of global infrastructure - driving decisions in healthcare, finance, public administration, and beyond. As the technology scales, the critical challenge shifts from technical capability to ethical governance. The question is no longer if AI will transform society, but who will direct that transformation.",
+      "locked": false,
+      "lessons": [
+        {
+          "id": "l1408",
+          "type": "reading",
+          "title": "How do machines learn? A brief hystory of AI",
+          "locked": false,
+          "html": "<p>Artificial Intelligence has evolved significantly over the past decades, moving from systems based on predefined rules to models capable of learning from data and adapting to new situations.</p><p>In the next video, Sergio Barbarossa, <strong>Scientific Director at EIIS</strong>, explores the history of Artificial Intelligence and the different approaches that have shaped the way machines learn.</p><p>The session will guide you through the transition from <strong>symbolic AI to data-driven approaches</strong>, explaining the <strong>role of data</strong>, computing power, neural networks, and modern AI models in the development of today’s intelligent systems.</p>"
+        },
+        {
+          "id": "l1409",
+          "type": "video",
+          "title": "Watch the video!",
+          "locked": false,
+          "vimeo": {
+            "id": "1159216772",
+            "h": "0db2d2e991"
+          }
+        },
+        {
+          "id": "l1413",
+          "type": "test",
+          "title": "Can you tell them apart?",
+          "locked": false,
+          "questions": [
+            {
+              "id": "q304",
+              "kind": "long-answer",
+              "text": "What is the main difference between rule-based AI and data-driven AI?",
+              "options": []
+            }
+          ]
+        },
+        {
+          "id": "l1414",
+          "type": "reading",
+          "title": "Generative AI: what it is and why it matters",
+          "locked": false,
+          "html": "<p><strong>Generative AI</strong> has introduced a new way of interacting with machines, enabling them to create new content such as text, images, audio, and other forms of data.</p><p>In this video, Danilo Comminiello explores<strong> how Generative AI works</strong>, starting from the role of data and the mechanisms that allow models to learn patterns and produce new outputs.</p><p>As you watch, you will explore what really happens when AI generates content: does it simply reproduce what it has already seen, or does it learn from examples to create something new?</p><p>The session will introduce the <strong>foundations of generative models</strong>, explaining concepts such as data distributions, neural networks, autoregressive models, and latent representations. It will also highlight the opportunities and challenges of this technology, from creativity and human-AI collaboration to ethical considerations and potential risks.</p>"
+        },
+        {
+          "id": "l1415",
+          "type": "video",
+          "title": "Watch the video!",
+          "locked": false,
+          "vimeo": {
+            "id": "1167425032",
+            "h": "47f185ca58"
+          }
+        },
+        {
+          "id": "l1416",
+          "type": "test",
+          "title": "Quiz Time!",
+          "locked": false,
+          "questions": [
+            {
+              "id": "q305",
+              "kind": "single-choice",
+              "text": "What are some challenges associated with Generative AI?",
+              "options": [
+                {
+                  "text": "The technology has no risks because it only creates fictional content",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                },
+                {
+                  "text": "The main challenge is that models cannot process any type of data",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                },
+                {
+                  "text": "Ethical concerns, misuse risks, and responsibility for potential failures need to be addressed",
+                  "correct": true,
+                  "feedback": "Correct!"
+                },
+                {
+                  "text": "Generative AI cannot be applied outside research environments",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s1417",
+      "title": "Food & Sustainability",
+      "description": "The food sector is undergoing a profound cultural revolution.\n\nFood sustainability is one of the most critical challenges of our time. Almost 700 million people go hungry while nearly three times as many are overweight or obese. At the same time, tons of food are wasted every day.\n\nThe way we grow, distribute, and consume food has a tremendous impact on our health and that of our Planet.\nFixing the broken food system is not just the right thing to do. It is what people – consumers – increasingly want.",
+      "locked": false,
+      "lessons": [
+        {
+          "id": "l1472",
+          "type": "test",
+          "title": "Knowing isn’t always doing",
+          "locked": false,
+          "questions": [
+            {
+              "id": "q317",
+              "kind": "long-answer",
+              "text": "<em>Think about a sustainable behavior you know is important (such as recycling, saving energy, or reducing food waste). </em></p><p>Why do you think people often fail to do it consistently, even when they know it is the right thing to do?",
+              "options": []
+            }
+          ]
+        },
+        {
+          "id": "l1473",
+          "type": "reading",
+          "title": "How behavioral science helps us design for change",
+          "locked": false,
+          "html": "<p>In our mission to <strong>create a more sustainable world</strong>, we often assume that simply giving people good information will lead them to make better choices. Yet, experience shows that awareness alone rarely translates into lasting behavioral change.</p><p>In the next video, you will discover how <strong>behavioral science</strong> helps bridge the gap between intention and action. You will explore the concept of choice architecture and learn a practical four-step process - <em>Define, Diagnose, Design, and Test</em> - for creating human-centered interventions that make sustainable behaviors easier to adopt.</p><p>Through a real-world case study from FAO on improving recycling habits, Cortney Price, <strong>Lead for Behavioral Science at FAO</strong>, demonstrates how evidence-based design can turn good intentions into meaningful action.</p>"
+        },
+        {
+          "id": "l1474",
+          "type": "video",
+          "title": "Watch the video!",
+          "locked": false,
+          "vimeo": {
+            "id": "809097767",
+            "h": "e2fd46d675"
+          }
+        },
+        {
+          "id": "l1475",
+          "type": "reading",
+          "title": "Using innovation to monitor development projects",
+          "locked": false,
+          "html": "<p><strong>How can we know whether a development project is really making a difference?</strong> Field visits are essential, but today innovative technologies allow us to monitor projects more effectively, measure their impact, and make better decisions.</p><p>In this video, Oliver Mundy, <strong>Environmental Specialist and Independent Consultant at IFAD</strong>, explains how maps, <strong>Geographic Information Systems (GIS)</strong>, and satellite imagery are transforming the way development projects are designed, monitored, and evaluated. Through real examples, you will discover how geospatial data can provide tangible evidence of environmental and social impact.</p>"
+        },
+        {
+          "id": "l1476",
+          "type": "video",
+          "title": "Watch the video!",
+          "locked": false,
+          "vimeo": {
+            "id": "879474097",
+            "h": "c8a303a77b"
+          }
+        },
+        {
+          "id": "l1477",
+          "type": "test",
+          "title": "Quiz Time!",
+          "locked": false,
+          "questions": [
+            {
+              "id": "q318",
+              "kind": "single-choice",
+              "text": "What is the main purpose of a Geographic Information System (GIS)?",
+              "options": [
+                {
+                  "text": "To create satellite images.",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                },
+                {
+                  "text": "To predict future climate conditions.",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                },
+                {
+                  "text": "To manage and analyze geographic data by combining multiple information layers.",
+                  "correct": true,
+                  "feedback": "Correct!"
+                },
+                {
+                  "text": "To replace traditional project databases.",
+                  "correct": false,
+                  "feedback": "Not Exactly."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s1478",
+      "title": "Biodiversity Manager",
+      "description": "The systems we depend on are living systems.\n\nEvery ecosystem is a network of relationships. Some are visible. Many are not. But together, they shape the conditions that allow territories, economies, supply chains, and communities to function.\n\nUnderstanding biodiversity today means learning to read these relationships: how they support resilience, where they become fragile, and how their loss can affect the systems we rely on.",
+      "locked": false,
+      "lessons": [
+        {
+          "id": "l1482",
+          "type": "reading",
+          "title": "What is biodiversity and why it means everything to us",
+          "locked": false,
+          "html": "<p>Biodiversity is often associated with forests, oceans, and endangered species. However, it is much closer to our daily lives than we might think: it is part of the systems that provide us with the air we breathe, the water we drink, and the conditions that allow life on Earth to exist.</p><p>In this video, you will <strong>discover what biodiversity really means </strong>and <strong>why humans are deeply connected to it</strong>. You will explore how the variety of living organisms and their interactions support essential processes that make our planet habitable - and why changes in biodiversity can directly affect our own lives.</p>"
+        },
+        {
+          "id": "l1483",
+          "type": "video",
+          "title": "Watch the video!",
+          "locked": false,
+          "vimeo": {
+            "id": "826143481",
+            "h": "b9ea0f99ac"
+          }
+        },
+        {
+          "id": "l1484",
+          "type": "test",
+          "title": "Can you see the connection?",
+          "locked": false,
+          "questions": [
+            {
+              "id": "q321",
+              "kind": "long-answer",
+              "text": "Tim Flannery explains that biodiversity influences essential conditions such as air quality, water availability, and climate regulation. </p><p>How are these systems connected to human well-being?",
+              "options": []
+            }
+          ]
+        },
+        {
+          "id": "l1479",
+          "type": "test",
+          "title": "Urban nature: what’s your view?",
+          "locked": false,
+          "questions": [
+            {
+              "id": "q319",
+              "kind": "long-answer",
+              "text": "Besides making cities more attractive, what benefits do you think biodiversity and green spaces can provide to people living in urban areas?",
+              "options": []
+            }
+          ]
+        },
+        {
+          "id": "l1480",
+          "type": "reading",
+          "title": "The Importance of biodiversity inside cities",
+          "locked": false,
+          "html": "<p>As more people move to urban areas, cities are becoming the places where most of us experience nature in our daily lives. This makes urban biodiversity more than just an environmental issue - it is essential for creating healthier, more resilient, and more livable communities.</p><p>In this video, you will discover why <strong>biodiversity matters in cities</strong>, how <strong>urban green spaces</strong> benefit both people and wildlife, and why designing cities with nature in mind can improve well-being, <strong>strengthen climate resilience, and reconnect citizens with the natural world</strong>.</p>"
+        },
+        {
+          "id": "l1481",
+          "type": "video",
+          "title": "Watch the video!",
+          "locked": false,
+          "vimeo": {
+            "id": "1161390118",
+            "h": "b2106c320b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s1485",
+      "title": "End of Program",
+      "description": "",
+      "locked": true,
+      "lessons": [
+        {
+          "id": "l1486",
+          "type": "reading",
+          "title": "Thank you for joining us! ✨",
+          "locked": true,
+          "html": "<p>Thank you for taking the time to explore this <strong>introductory learning experience</strong>.</p><p>We hope it has given you a glimpse of our approach: rigorous, practical, interdisciplinary, and designed for professionals who want to better understand today's sustainability challenges and their strategic implications for business.</p><p>Through our learning experiences, participants engage with <strong>international experts, real-world business cases, practical tools, and forward-looking perspectives</strong> to develop the knowledge and capabilities needed to drive meaningful change within their organizations.</p><p>We would be delighted to continue this journey with you. The next step is yours!</p>"
+        }
+      ]
+    }
+  ]
+}

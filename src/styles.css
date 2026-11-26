@@ -1,0 +1,387 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   Gli stessi token del Digital Campus (EIIS Design System), con il marchio
+   MiiS al posto del verde EIIS. I componenti usano solo questi token: il tema
+   cambia la mappatura, non il significato.
+   ========================================================================== */
+
+:root {
+  /* Marchio MiiS: l'azzurro dell'organizzazione sul vecchio campus. */
+  --eiis-brand-500: #0bc1d5;
+  --eiis-brand-600: #09a9bb;
+  --eiis-brand-soft: rgba(11, 193, 213, 0.14);
+  --eiis-text-on-brand: #0b1f26;
+  /* Gli altri due colori del logo, per i dettagli. */
+  --miis-pink: #e0245e;
+  --miis-green: #8dc63f;
+  --miis-navy: #263340;
+
+  --eiis-bg-canvas: #f7f8fa;
+  --eiis-bg-surface: #ffffff;
+  --eiis-bg-raised: #ffffff;
+  --eiis-bg-inset: #fafafa;
+  --eiis-bg-subtle: #f1f3f5;
+  --eiis-page-text: #1f2a33;
+  --eiis-page-text-2: #52606b;
+  --eiis-page-line: #e4e7ea;
+  --eiis-border-default: var(--eiis-page-line);
+  --eiis-border-strong: #d0d5da;
+  --eiis-text-primary: var(--eiis-page-text);
+  --eiis-text-secondary: var(--eiis-page-text-2);
+  --eiis-text-disabled: #a3a9ae;
+  /* L'azzurro del marchio non ha contrasto sul bianco: link e testo azzurro
+     usano una tinta più scura (4,9:1). */
+  --eiis-link: #06798a;
+  --eiis-overlay: rgba(0, 0, 0, 0.6);
+
+  --eiis-success: #28c76f;
+  --eiis-warning: #ff9f43;
+  --eiis-error: #ff4c51;
+  --eiis-info: #00bad1;
+  --eiis-community: #3c5a48;
+  --eiis-community-soft: rgba(60, 90, 72, 0.12);
+  --eiis-ai: #7b5ce0;
+  --eiis-ai-soft: rgba(123, 92, 224, 0.12);
+
+  --eiis-font-heading: "Poppins", system-ui, sans-serif;
+  --eiis-font-body: "Figtree", system-ui, sans-serif;
+
+  --eiis-radius-sm: 6px;
+  --eiis-radius-md: 8px;
+  --eiis-radius-lg: 12px;
+  --eiis-radius-xl: 20px;
+
+  --eiis-focus-ring: 0 0 0 3px rgba(11, 193, 213, 0.35);
+  --eiis-shadow-card: 0 1px 4px rgba(20, 40, 60, 0.05);
+  --eiis-shadow-lift: 0 8px 24px rgba(20, 40, 60, 0.08);
+  --eiis-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* In arabo: un carattere arabo, e niente spaziatura fra le lettere, che
+   spezzerebbe le legature. */
+:root[lang="ar"] {
+  --eiis-font-heading: "IBM Plex Sans Arabic", "Poppins", system-ui, sans-serif;
+  --eiis-font-body: "IBM Plex Sans Arabic", "Figtree", system-ui, sans-serif;
+}
+:root[lang="ar"] * {
+  letter-spacing: 0 !important;
+}
+
+:root[data-theme="dark"] {
+  --eiis-bg-canvas: #171b1f;
+  --eiis-bg-surface: #1c2126;
+  --eiis-bg-raised: #232a30;
+  --eiis-bg-inset: #232a30;
+  --eiis-bg-subtle: #2b333a;
+  --eiis-page-line: #313a42;
+  --eiis-border-default: var(--eiis-page-line);
+  --eiis-border-strong: #3e4851;
+  --eiis-page-text: #ffffff;
+  --eiis-page-text-2: #aeb8c0;
+  --eiis-text-disabled: #66717a;
+  --eiis-link: #3fd4e4;
+  --eiis-overlay: rgba(0, 0, 0, 0.75);
+  --eiis-community: #7fb08f;
+  --eiis-community-soft: rgba(127, 176, 143, 0.16);
+  --eiis-ai: #a48cf0;
+  --eiis-ai-soft: rgba(164, 140, 240, 0.16);
+  --eiis-shadow-card: 0 1px 4px rgba(0, 0, 0, 0.3);
+  --eiis-shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --eiis-bg-canvas: #171b1f;
+    --eiis-bg-surface: #1c2126;
+    --eiis-bg-raised: #232a30;
+    --eiis-bg-inset: #232a30;
+    --eiis-bg-subtle: #2b333a;
+    --eiis-page-line: #313a42;
+    --eiis-border-default: var(--eiis-page-line);
+    --eiis-border-strong: #3e4851;
+    --eiis-page-text: #ffffff;
+    --eiis-page-text-2: #aeb8c0;
+    --eiis-text-disabled: #66717a;
+    --eiis-link: #3fd4e4;
+    --eiis-overlay: rgba(0, 0, 0, 0.75);
+    --eiis-community: #7fb08f;
+    --eiis-community-soft: rgba(127, 176, 143, 0.16);
+    --eiis-ai: #a48cf0;
+    --eiis-ai-soft: rgba(164, 140, 240, 0.16);
+    --eiis-shadow-card: 0 1px 4px rgba(0, 0, 0, 0.3);
+    --eiis-shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Il logo intero ha la scritta blu notte: sul fondo scuro gli si mette sotto
+   una lastra chiara, invece di ridisegnarlo. */
+.logo-plate {
+  border-radius: 14px;
+}
+:root[data-theme="dark"] .logo-plate {
+  background: #f7f8fa;
+  padding: 8px 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-plate {
+    background: #f7f8fa;
+    padding: 8px 14px;
+  }
+}
+
+.theme-switch-knob {
+  transform: translateX(4px);
+  transition: transform 180ms var(--eiis-easing-standard);
+}
+:root[data-theme="dark"] .theme-switch-knob {
+  transform: translateX(28px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-switch-knob {
+    transform: translateX(28px);
+  }
+}
+[dir="rtl"] .theme-switch-knob {
+  transform: translateX(-4px);
+}
+:root[data-theme="dark"][dir="rtl"] .theme-switch-knob {
+  transform: translateX(-28px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"])[dir="rtl"] .theme-switch-knob {
+    transform: translateX(-28px);
+  }
+}
+
+@theme inline {
+  --color-brand: var(--eiis-brand-500);
+  --color-brand-hover: var(--eiis-brand-600);
+  --color-brand-soft: var(--eiis-brand-soft);
+  --color-on-brand: var(--eiis-text-on-brand);
+  --color-canvas: var(--eiis-bg-canvas);
+  --color-surface: var(--eiis-bg-surface);
+  --color-raised: var(--eiis-bg-raised);
+  --color-inset: var(--eiis-bg-inset);
+  --color-subtle: var(--eiis-bg-subtle);
+  --color-line: var(--eiis-border-default);
+  --color-line-strong: var(--eiis-border-strong);
+  --color-content: var(--eiis-text-primary);
+  --color-content-2: var(--eiis-text-secondary);
+  --color-content-disabled: var(--eiis-text-disabled);
+  --color-link: var(--eiis-link);
+  --color-success: var(--eiis-success);
+  --color-warning: var(--eiis-warning);
+  --color-error: var(--eiis-error);
+  --color-info: var(--eiis-info);
+  --color-community: var(--eiis-community);
+  --color-community-soft: var(--eiis-community-soft);
+  --color-ai: var(--eiis-ai);
+  --color-ai-soft: var(--eiis-ai-soft);
+  --color-pink: var(--miis-pink);
+  --color-leaf: var(--miis-green);
+  --color-navy: var(--miis-navy);
+  --shadow-card: var(--eiis-shadow-card);
+  --shadow-lift: var(--eiis-shadow-lift);
+  --font-heading: var(--eiis-font-heading);
+  --font-body: var(--eiis-font-body);
+  --radius-sm: var(--eiis-radius-sm);
+  --radius-md: var(--eiis-radius-md);
+  --radius-lg: var(--eiis-radius-lg);
+  --radius-xl: var(--eiis-radius-xl);
+  --spacing: 4px;
+}
+
+@layer base {
+  html {
+    scrollbar-gutter: stable;
+  }
+  body {
+    background-color: var(--eiis-bg-canvas);
+    color: var(--eiis-text-primary);
+    font-family: var(--eiis-font-body);
+    font-size: 14px;
+    line-height: 21px;
+    -webkit-font-smoothing: antialiased;
+    overflow-wrap: break-word;
+  }
+  :root[lang="ar"] body {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--eiis-font-heading);
+    text-wrap: balance;
+  }
+  :focus-visible {
+    outline: none;
+    box-shadow: var(--eiis-focus-ring);
+    border-radius: var(--eiis-radius-sm);
+  }
+  ::selection {
+    background: var(--eiis-brand-500);
+    color: var(--eiis-text-on-brand);
+  }
+  button {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: default;
+  }
+}
+
+@layer components {
+  .card {
+    background: var(--eiis-bg-surface);
+    border: 1px solid var(--eiis-border-default);
+    border-radius: var(--eiis-radius-xl);
+    box-shadow: var(--eiis-shadow-card);
+  }
+  .card-lift {
+    transition:
+      transform 150ms var(--eiis-easing-standard),
+      box-shadow 150ms var(--eiis-easing-standard),
+      border-color 150ms var(--eiis-easing-standard);
+  }
+  .card-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--eiis-shadow-lift);
+  }
+  #topbar {
+    background: color-mix(in srgb, var(--eiis-bg-canvas) 82%, transparent);
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--eiis-text-secondary);
+  }
+  :root[lang="ar"] .eyebrow {
+    font-size: 12px;
+  }
+
+  /* Il testo delle lezioni, come `.prose-editor` del campus. */
+  .prose-lesson {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .prose-lesson p {
+    margin: 0 0 14px;
+  }
+  .prose-lesson p:last-child {
+    margin-bottom: 0;
+  }
+  .prose-lesson strong {
+    font-weight: 650;
+    color: var(--eiis-text-primary);
+  }
+  .prose-lesson em {
+    color: var(--eiis-link);
+    font-style: italic;
+  }
+  .prose-lesson ul,
+  .prose-lesson ol {
+    margin: 0 0 14px;
+    padding-inline-start: 22px;
+  }
+  .prose-lesson ul {
+    list-style: disc;
+  }
+  .prose-lesson ol {
+    list-style: decimal;
+  }
+  .prose-lesson li {
+    margin: 4px 0;
+  }
+  .prose-lesson a {
+    color: var(--eiis-link);
+    text-decoration: underline;
+  }
+  .prose-lesson h1,
+  .prose-lesson h2,
+  .prose-lesson h3 {
+    font-weight: 600;
+    margin: 18px 0 8px;
+  }
+  .prose-lesson h2 {
+    font-size: 20px;
+  }
+  .prose-lesson h3 {
+    font-size: 17px;
+  }
+  :root[lang="ar"] .prose-lesson {
+    font-size: 17px;
+    line-height: 1.9;
+  }
+
+  /* Il certificato. */
+  .cert-paper {
+    background:
+      radial-gradient(circle at 12% 18%, rgba(11, 193, 213, 0.1), transparent 40%),
+      radial-gradient(circle at 88% 82%, rgba(224, 36, 94, 0.08), transparent 42%),
+      #ffffff;
+    color: #1f2a33;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+.grid {
+  grid-auto-columns: minmax(0, 1fr);
+}
+
+@keyframes typing {
+  0%,
+  80%,
+  100% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+.typing-dot {
+  animation: typing 1.2s infinite ease-in-out;
+}
+.typing-dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.typing-dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-up {
+  animation: fade-up 220ms var(--eiis-easing-standard);
+}

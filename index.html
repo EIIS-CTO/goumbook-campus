@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex" />
+    <title>MiiS Digital Campus · Preview</title>
+    <meta name="description" content="A preview of the MiiS Digital Campus, with fictional data." />
+    <link rel="icon" type="image/png" href="./brand/miis-mark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      // Tema e lingua prima del primo disegno: niente lampo bianco, niente salto da sinistra a destra.
+      try {
+        var t = localStorage.getItem("miis-theme");
+        if (t === "dark" || t === "light") document.documentElement.dataset.theme = t;
+        var l = localStorage.getItem("miis-lang");
+        if (l === "ar") { document.documentElement.lang = "ar"; document.documentElement.dir = "rtl"; }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
